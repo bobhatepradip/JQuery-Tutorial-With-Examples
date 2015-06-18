@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>jQuery Special Effects</h1>
+    <a href="http://www.thingswelearned.com">ThingsWeLearned.com</a>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").click(function (event) {
+                event.preventDefault();
+                $(this).hide("slow");
+            });
+        });
+    </script>
+</body>
+</html>

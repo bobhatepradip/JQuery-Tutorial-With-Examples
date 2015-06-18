@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>jQuery Prevent Default</h1>
+    <a href="http://www.thingswelearned.com">ThingsWeLearned.com</a>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").click(function (event) {
+                alert("The link will no longer take you to ThingsWeLearned.com");
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>

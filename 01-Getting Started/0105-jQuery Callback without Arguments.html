@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>jQuery Callback without Arguments</h1>
+    <a href="http://www.thingswelearned.com">ThingsWeLearned.com</a>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            ///Approach 1
+            $.get("myhtmlpage.html", myCallBack_1);
+            ///Approach 2
+            $.get("myhtmlpage.html", function () {
+                myCallBack_2();
+            });
+            ///Approach 2
+            $.get("myhtmlpage.html", function () {
+                ///Do your work here (3)
+            });
+        });
+
+        function myCallBack_1() {
+            ///Do your work here (1)
+        }
+        function myCallBack_2() {
+            ///Do your work here (2)
+        }
+    </script>
+</body>
+</html>
