@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        h1.test { color: red; }
+    </style>
+</head>
+<body>
+    <h1>jQuery Add/Delete Class</h1>
+    <a class="add" href="http://www.thingswelearned.com">Add class in H1</a> | <a class="delete" href="http://www.thingswelearned.com">Delete class in H1</a>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".add").click(function (event) {
+                event.preventDefault();
+                $("h1").addClass("test");
+            });
+            $(".delete").click(function (event) {
+                event.preventDefault();
+                $("h1").removeClass("test");
+            });
+        });
+    </script>
+    <hr />
+    <footer><a href="http://www.thingswelearned.com">ThingsWeLearned.com</a></footer>
+</body>
+</html>
